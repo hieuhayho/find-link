@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "find-link-app",
+  "description": "Công cụ hỗ trợ tìm link trên trang web",
+  "version": "1.0.0",
+  "author": "hieuhayho <nguyenminhhieu97qt@gmail.com>",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "nextron build",
+    "build:all": "nextron build --all",
+    "build:win32": "nextron build --win --ia32",
+    "build:win64": "nextron build --win --x64",
+    "build:mac": "nextron build --mac --x64",
+    "build:linux": "nextron build --linux"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.0.1",
+    "next-images": "^1.8.1",
+    "reactstrap": "^8.10.0",
+    "regex": "^0.1.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^11.1.2",
+    "autoprefixer": "^10.3.5",
+    "css-loader": "^6.3.0",
+    "electron": "^15.0.0",
+    "electron-builder": "^22.11.7",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-plugin-react": "^7.26.0",
+    "next": "^11.1.2",
+    "nextron": "^7.1.0",
+    "postcss": "^8.3.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "style-loader": "^3.3.0"
+  }
+}

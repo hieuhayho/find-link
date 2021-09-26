@@ -1,0 +1,12 @@
+appId: atpfindurl
+productName: Find Link App
+copyright: Copyright © 2021 hieuhayho
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
